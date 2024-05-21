@@ -18,3 +18,6 @@ def dades_lectura():
     print(f"Dada 4: {dada4}")
     print(f"Dada 5: {dada5}")
     
+from equivalencies import equivalencies
+def codi_morse():
+        
