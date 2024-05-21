@@ -21,6 +21,12 @@ while True:
         print("El cansat s'està localitzant")
     elif mode==3 : 
         print("dades cansat") #afegir les dades de la lectura
+    elif mode==4:
+        print("") #dades del senor IR
+    elif mode==5:
+        print("") #enviar missatge al cansat
+    else:
+        print("") #envia les dades del geolocaltzador
     
 #Així podem accedir a cada valor i guardar-lo en una variable
 dada1 = dades[0]
