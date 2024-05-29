@@ -12,15 +12,19 @@ while True:
     missatge_bytes = missatge.encode('Ascii')
     cansat.write(missatge_bytes)
     print("Aquests són els modes del CanSat: ")
-    print ("0: REPÒS -> Redueix l'activitat per estalviar energia.
-1: TEST CONNEXIÓ -> Enviam una dada al cansat. Després torna a repòs.
-2: LOCALITZAR -> El cansaat pita fins que és localitzat.
-3: ENVIAR DADES -> Envia les dades dels seus sensors
-4: REBRE MISSATGE -> Envia la lectura del sensor IR.
-5: ENVIAR MISSATGE -> Enviam un missatge al CanSat. Ha de començar amb un #.
-6: GEOLOCALITZACIO -> Envia les dades del GPS") # Passar davant
+    print ("Els modes del cansant són els següents:
+    0: REPÒS -> Redueix l'activitat per estalviar energia.
+    1: TEST CONNEXIÓ -> Enviam una dada al cansat. Després torna a repòs.
+    2: LOCALITZAR -> El cansat pita fins que és localitzat.
+    3: ENVIAR DADES -> Envia les dades dels seus sensors
+    4: REBRE MISSATGE -> Envia la lectura del sensor IR.
+    5: ENVIAR MISSATGE -> Enviam un missatge al CanSat. 
+    6: GEOLOCALITZACIO -> Envia les dades del GPS") 
 
+    missatge = input(f"Quin missatge vols enviar?: ")
 
+    missatge_bytes = missatge.encode('Ascii')
+    cansat.write(missatge_bytes)
 
 
 print("Adeu!")
