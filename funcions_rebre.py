@@ -1,7 +1,7 @@
 def separar_mode_lectura(lectura):
     estat = lectura.split("#") [0]
 def separar_dades_lectura(lectura):
-    dades = lectura.split("#") [1]
+    dades = lectura.split("/") [1]
 
 def dades_lectura():
     dades_separades = dades.split(",") 
@@ -10,7 +10,7 @@ def dades_lectura():
     dada3 = int(dades_separades[2]) #temperatura del termistor
     dada4 = int(dades_separades[3]) #pressió BMP280
     dada5 = int(dades_separades[4]) #temperatura BMP280
-    dada6 = int(dades_separades[5]) #dades sensor IR
+
    #afegir més dades si són necessàries
 
     print(f"Dada 1: {dada1}")
@@ -20,6 +20,29 @@ def dades_lectura():
     print(f"Dada 5: {dada5}")
     print(f"Dada 6: {dada6}")
     
-from equivalencies import equivalencies
+
 def codi_morse():
+While len(codi_morse) <4:
+    while True:
+        lectura_0 = cansat.readline().decode('Ascii').rstrip("\r\n")
+        saber_estat = lectura_0.split('/')
+        estat = separar_mode_lectura
+        dades=
+        lectura_IR=dades
+        print(lectura_IR)#No és necessari
+        if estat != 4:
+            break
+        if lectura_IR == "0"
+         ir += lectura_IR
+        
+    if len(ir)>=8:
+        break
+    elif len(ir)<=3:
+        codi_morse += "."
+        print(".")
+        ir=""
+    else:
+        codi_morse += "-"
+        ir= ""
+    return 
         
