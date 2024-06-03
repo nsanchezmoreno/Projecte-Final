@@ -22,7 +22,11 @@ while True:
     if estat == 4:
         if missatge == "0":
             comptador_zeros += 1
-    # escriure quants de uns són un punt i una retxa
-    #intentar passar de codi morse a lletres
+            if len(comptador_zeros) >10: #Si el nombre de zeros és major que 10, hi ha hagut un error
+                print("\n") 
+            elif len(comptador_zeros) <= 4: #si el nombre de zeros és més petit o equivalent a 4 significa que ens envien un ·
+                print("·") 
+            else: #Si el nombre de zeros és igual o major a 5, en estan enviant una -
+                print("-") 
     else:
         funcions_rebre.mostrar_missatge(missatge)
