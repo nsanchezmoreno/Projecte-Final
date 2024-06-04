@@ -1,4 +1,4 @@
-equivalencies = {
+equivalencies = 
   "A" :	"·-" 
   "B"	: "-···"
   "C" :	"-·-·"
@@ -26,5 +26,3 @@ equivalencies = {
   "X": "-..-"
   "Y": "-.--"
   "Z": "--.."
-
-
