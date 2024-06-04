@@ -4,7 +4,7 @@ import funcions_rebre
 
 BAUD_RATE = 9600
 # nom_port = '/dev/cu.usbserial-1420' #APC
-nom_port = "/dev/cu.usbmodem14101"  # Arduino cable
+nom_port = "/dev/ttyUSB0"  # Arduino cable
 
 cansat = serial.Serial(nom_port, BAUD_RATE)
 
@@ -14,6 +14,7 @@ while True:
 
     lectura = funcions_rebre.rebre_dades(cansat)
     print(lectura)
+    """
     estat = funcions_rebre.separar_mode(lectura)
     missatge = funcions_rebre.separar_missatge(lectura)
 
@@ -30,3 +31,4 @@ while True:
                 print("-") 
     else:
         funcions_rebre.mostrar_missatge(missatge)
+    s"""

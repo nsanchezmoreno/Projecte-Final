@@ -2,7 +2,7 @@ import serial
 
 BAUD_RATE = 9600
 # nom_port = '/dev/cu.usbserial-1420' #APC # S'ha de canviar
-nom_port = "/dev/cu.usbmodem14101"  # Arduino cable
+nom_port = "/dev/ttyUSB0"  # Arduino cable
 
 cansat = serial.Serial(nom_port, BAUD_RATE)
 
