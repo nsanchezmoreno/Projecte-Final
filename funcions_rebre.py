@@ -52,11 +52,13 @@ def analisis_dades(missatge): #Funció que analitza les dades
     t = round(73.74 - 21.06*math.log(r_ter),3) #Calcula la temperatura real en ºC
 
     #posar-ho polit
-    print(f"Número de paquet: {num_paquet}")
-    print(f"Nom del cansat: {nom_cansat}")
-    print(f"La temperatura del termistor és de {t}ºC")
-    print(f"La pressió és de {pressio_BMP} Pa")
-    print(f"La temperatura del BMP és de {temp_BMP}ºC")
+    print(f"""--------------------------------------------------
+    | Número de paquet: {num_paquet}")               |
+    | Nom del cansat: {nom_cansat}                   |
+    | La temperatura del termistor és de {t}ºC       |
+    | La pressió és de {pressio_BMP} Pa              |
+    | La temperatura del BMP és de {temp_BMP}ºC      |
+    --------------------------------------------------""") #Printa les dades analitzades
     
 
 
