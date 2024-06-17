@@ -18,6 +18,12 @@ while True:
     
     if estat == 3: #Quan l'estat és 3 es printen les dades analitzades a la funció analisis_dades del fitxer funcions_rebre
         funcions_rebre.analisis_dades(missatge)
+        nom_fitxer = "Dades_Cansat.csv"
+
+
+        # 'a' significa 'append' i fa que afegim línies a un fitxer sense borrar lo que ja tenim
+        with open(nom_fitxer, 'a') as file_object:
+                file_object.write(f"{missatge}\n")
 
     elif estat == 4: #Quan l'estat és 4 es passa a descodificar el codi morse
         while True:
