@@ -7,21 +7,21 @@ nom_port = "/dev/ttyUSB0"  # Arduino cable
 cansat = serial.Serial(nom_port, BAUD_RATE)
 
 while True:
-    explicació = print("Si vols enviar un missatge al cansat envia el nombre corresponent a l'acció desitjada, però si vols sortir prem 'q'")
+    explicació = print("Si vols enviar un missatge al cansat envia el nombre corresponent a l'acció desitjada, però si vols sortir prem 'q'") #printa l'explicació de la funció del programa
    
-    print("Aquests són els modes del CanSat: ")
+    print("Aquests són els modes del CanSat: ") 
     print ("""0: REPÒS -> Redueix l'activitat per estalviar energia.
 1: TEST CONNEXIÓ -> Enviam una dada al cansat. Després torna a repòs.
 2: LOCALITZAR -> El cansaat pita fins que és localitzat.
 3: ENVIAR DADES -> Envia les dades dels seus sensors
 4: REBRE MISSATGE -> Envia la lectura del sensor IR.
 5: ENVIAR MISSATGE -> Enviam un missatge al CanSat. Ha de començar amb un #.
-6: GEOLOCALITZACIO -> Envia les dades del GPS""") # Passar davant
-    missatge = input(f"Quin missatge vols enviar?: ")
+6: GEOLOCALITZACIO -> Envia les dades del GPS""") #Explica els diferents modes del cansat
+    missatge = input(f"Quin missatge vols enviar?: ") #Demana a l'usuari quin missatge vol enviar
     missatge_bytes = missatge.encode('Ascii')
     cansat.write(missatge_bytes)
-    if missatge == 'q':
+    if missatge == 'q': #Si el missatge que envia l'usuari es 'q', el programa s'atura
         break
 
-print("Adeu!")
+print("Adeu!") #Diu 'Adéu' quan el programa es tanca
 cansat.close() # Tanca el port
